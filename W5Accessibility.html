@@ -74,11 +74,11 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="post-heading">
-            <h1>A look at Mobile Testing</h1>
-            <h2 class="subheading">The other kind of usability</h2>
+            <h1>Week 5: Online Accessibility</h1>
+            <h2 class="subheading">Designing for the Disabled</h2>
             <span class="meta">Posted by
               <a href="#">John Meyer</a>
-              on April 28, 2019</span>
+              on May 5, 2019</span>
           </div>
         </div>
       </div>
@@ -90,62 +90,42 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-        
-        <h2 class="section-heading">SummerBoard</h2>
-        <p>
-            Last week we took a look at the basics of usability testing websites. The test subject, Leiftech, had a few issues primarily with
-            showcasing the right information in the right area. However, in the week since we analyzed their site they have released a new
-            product and rebranded themselves. The website stayed mostly the same but it changed enough to warrant a second look. Now known
-            as SummerBoard I want to see if the same issues I came across originally are present in the mobile version.
-        </p>
+            <p>Today I’ll be looking at another portion of using the web that often gets overlooked: Accessibility. There are millions
+               of people in the United States who have a disability that impairs their use of the web. If a website isn’t up to today’s
+                accessibility standards then it may be doing its customers a disservice or even breaking the law. To explore this concept
+                 I’ll be taking a look at the local mountain resort <a href="https://www.stevenspass.com/site">Stevens Pass</a> to see if their site passes some tests.
+            </p>
 
-        <p>
-            The importance of mobile design has skyrocketed in the last decade as the amount of browsing on phones did the same. While many
-            sites tackle this challenge in different ways the most common is to allow for a responsive layout. While no mobile specific features
-            need to be created some desktop standards will not work. You can’t use hover with fingers and certainly don’t want to load a new page
-            just to see more content. Summerboard avoids these major problems off the bat which is good for any modern website.
-        </p>
+            <a href="https://www.stevenspass.com/site">
+                <img class="img-fluid" src="img/StevensPassHome.JPG" alt="The Stevens Pass Home Page">
+            </a>
 
-        <a href="https://summerboard.com/">
-            <img class="img-fluid" src="img/Screenshot_20190428-224427.png" alt="The Homepage od Summerboard on mobile">
-        </a>
+            <h2 class="section-heading">What Does Accessibility cover?</h2>
 
-        <h2 class="section-heading">The Test</h2>        
-        <p>This is a usability test though so I want to know if SummerBoard runs into the same issues on my phone. I set up some recording
-            software, recruited some volunteers, and adjusted my script from last time. To summarize my process: I explained what a usability test
-            consisted of briefly along with some details on what I needed from them, primarily narration. After that I had my users scroll through
-            the homepage giving me their personal impressions. Then I ran my three tasks:
-        </p>
+            <p>Defining accessibility is a bit more nuanced then you might think. First of all there are blind users who use screen readers
+               and text to speech devices to help navigate the web. Compensating for the blind usually means clearly labeling alternate
+                text for images along with presenting valid audio options such as text to speech. Some users have physical limitations
+                 that prevent them from using a standard mouse and keyboard. Making sure that the site is navigable with only mouse or only
+                  keyboard can be a huge boon for the physically disabled. There are many more aspects to consider such as contrast that can
+                   greatly improve web access.
+            </p>
 
-        <ol>
-            <li>What is this site about? Do you understand what is being sold & how would you find out more?</li>
-            <li>Assume you were buying one of these. How would you go about that? Can you finance and find price information easily?</li>
-            <li>If you already had one but needed a battery replaced where can you buy one of those? Is it under warranty?</li>
-        </ol>
+            <p>To test Stevens Pass I’m going to utilize a few tools designed to simulate how a disabled user would see the site. First I’m
+                 going to run it through WAVE which scans elements to see if they meet section 508 compliance (the US law for accessibility).
+                  I also will use acchecker which is the canadian version of WAVE. Google lighthouse is a built in tool for google chrome that
+                   generates a report of the website under simulated conditions such as bad cell data. Between all of these tools I was able to
+                    get a solid read on Stevens Pass’ website.
+            </p>
 
-        <p>Then I took any questions, thoughts, or suggested changes before I let my test subjects on their way.</p>
-      
-        <a href="https://summerboard.com/">
-            <img class="img-fluid" src="img/Screenshot (Apr 28, 2019 10_44_51 PM).png" alt="The Homepage od Summerboard on mobile">
-        </a>
+            <h2 class="section-heading">Reaching for the Stars</h2>
 
-        <h2 class="section-heading">What was Different on Mobile</h2>
-
-        <p>My results were a bit surprising as many of the issues I had with the desktop version disappeared. All of my testers found that the
-            new infographic was very informative and easy to understand. The buying process was very easy for all of them. The finances were 
-            a bit odd as the amount changed on them but that was an external site. One user wanted more information about specifications on
-            the main page while another found a whole manual pdf. The recurring problem was that the menu on the bottom of the page didn’t
-            actually provide what my users wanted. Compared to the desktop users navigation was a bit easier and quicker but lacked the
-            density they wanted.
-        </p>
+            <p>Testorama</p>
 
 
-        <p>Given that this felt very similar to the desktop site and almost every element transferred to a mobile format easily there aren’t too many
-            major critiques. The big recommendations from my users were mostly about condensing content into solid menus. Adding more content into
-            the dropdown menu was the biggest request by far which makes sense as you lack a navbar on mobile. The other issues were about more technical
-            things such as making a whole piece a link rather than the title. Overall I’m rather impressed by how well this test went in comparison to
-            the other one.
-        </p>
+            <span class="caption text-muted">To go places and do things that have never been done before – that’s what
+            living is all about.</span>
+
+            <p>hey</p>
 
 
         </div>
