@@ -100,6 +100,8 @@
                 <img class="img-fluid" src="img/StevensPassHome.JPG" alt="The Stevens Pass Home Page">
             </a>
 
+            <br>
+
             <h2 class="section-heading">What Does Accessibility cover?</h2>
 
             <p>Defining accessibility is a bit more nuanced then you might think. First of all there are blind users who use screen readers
@@ -117,15 +119,41 @@
                     get a solid read on Stevens Pass’ website.
             </p>
 
-            <h2 class="section-heading">Reaching for the Stars</h2>
+            <a href="https://www.stevenspass.com/site">
+                <img class="img-fluid" src="img/StevensPassWAVE.JPG" alt="The Stevens Pass Home Page viewed in WAVE">
+            </a>
 
-            <p>Testorama</p>
+            <br>
 
+            <h2 class="section-heading">Testing 1,2,3...</h2>
 
-            <span class="caption text-muted">To go places and do things that have never been done before – that’s what
-            living is all about.</span>
+            <p>Stevens Pass may be a ski resort but that certainly doesn't stop the disabled from enjoying the slopes. I was pleasantly surprised
+                 to see that WAVE had very few issues with the site. The primary problems it had were with elements that were entirely visual, in
+                  this case the language selections in the footer. This could be easily solved with a little bit of alt text. The other issue was
+                   redundancy and noscript elements but both were non intrusive so I didn’t really think it was a problem. AcChecker provided
+                    almost identical results which made a good impression on me.
+            </p>
 
-            <p>hey</p>
+            <p>Google Lighthouse presented a new set of issues this time mostly around performance. While having a fast website is not necessarily
+                 an accessibility issue it does vastly improve the usability of those on limited networks. With some painfully slow load times of
+                  around 9 seconds on simulated 4g using Stevens Pass’ website is not cutting it. The primary contributor to this is the excessive
+                   amount of photos on the home page. The Cache and DOM were also unreasonably large slowing things down even more. This is
+                    unreasonable for their target audience who would likely be in low cell service areas. The cumbersome experience presented
+                     here would be severely detrimental to more than just disabled users and desperately needs improvement.
+            </p>
+            
+            <a href="https://www.stevenspass.com/site">
+                <img class="img-fluid" src="img/StevensPassLightHouse.JPG" alt="The Stevens Pass Home Page viewed in WAVE">
+            </a>
+
+            <span class="caption text-muted">A look at Google lighthouse performing a test on Stevens Pass home page</span>
+
+            <p>My main takeaway from this test is that meeting accessibility standards isn’t actually that hard but stylistic choices can get in
+                 the way. While Stevens Pass does have some issues most of them are minor. Nothing was explicitly broken or in the way of what a
+                  disabled user would need. The proper use of aria tags and alt tags throughout the site was commendable. The biggest change I
+                   would recommend would be to improve performance as that heavily impacted all users. Implementing these changes should be
+                    straightforward and easy to fix.
+            </p>
 
 
         </div>
