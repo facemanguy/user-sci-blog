@@ -14,7 +14,7 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
+  <meta name="description" content="Week 6 Accessibility Self Test">
   <meta name="author" content="John Meyer">
 
   <title>User Science Journal</title>
@@ -51,7 +51,7 @@
               Blog
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                <a class="dropdown-item" href="W1Edmonds.html">Week 1: Edmonds Theater</a>
+                <a class="dropdown-item" href="W1Edmonds.html">Week 1: Edmond Theater</a>
                 <a class="dropdown-item" href="W2Boats.html">Week 2: Boat Tours</a>
                 <a class="dropdown-item" href="W3SkateBoards.html">Week 3: Testing Skateboards</a>
                 <a class="dropdown-item" href="W4Mobile.html">Week 4: Mobile & New Skateboards</a>
@@ -75,11 +75,11 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="post-heading">
-            <h1>Week 5: Online Accessibility</h1>
-            <h2 class="subheading">Designing for the Disabled</h2>
+            <h1>Testing Myself</h1>
+            <h2 class="subheading">Checking My Own Accessibility</h2>
             <span class="meta">Posted by
               <a href="#">John Meyer</a>
-              on May 5, 2019</span>
+              on May 12, 2019</span>
           </div>
         </div>
       </div>
@@ -91,70 +91,42 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-            <p>Today I’ll be looking at another portion of using the web that often gets overlooked: Accessibility. There are millions
-               of people in the United States who have a disability that impairs their use of the web. If a website isn’t up to today’s
-                accessibility standards then it may be doing its customers a disservice or even breaking the law. To explore this concept
-                 I’ll be taking a look at the local mountain resort <a href="https://www.stevenspass.com/site">Stevens Pass</a> to see if their site passes some tests.
+
+            <h2 class="section-heading">Checking My own Work</h2>
+
+            <p>Last week was all about accessibility implementation which isn’t all that hard yet regularly ignored. I am not infallible however and may have skimmed over
+               some accessibility standards on the very site you are looking at. Simple forgetfulness may be one of the most common reasons why a website isn’t up to date
+                with accessibility. Thus I will spend this week analyzing my own work here to see what I can fix.
             </p>
 
-            <a href="https://www.stevenspass.com/site">
-                <img class="img-fluid" src="img/StevensPassHome.JPG" alt="The Stevens Pass Home Page">
+            <p>To quickly remind ourselves what we will be testing with I’ll summarize last weeks guidelines. The United States has a law called Section 508 which requires
+                 websites to include accessibility features for disabled users. Most other countries have a similar law in place making it a good idea to create compliant
+                  work from a legal perspective. To test this I will be running my site through WAVE and Google Lighthouse, 2 tools that can identify problems automatically.
+                   I want to make sure that I can resolve any issues that are critical for disabled users.
+            </p>
+
+            <h2 class="section-heading">Issues with Images</h2>
+
+            <p>Running WAVE revealed that I had a problem with image links on almost every page. The template I was using had social media icons that defaulted as empty.
+                 This should be an easy fix but it was one that I was totally unaware of simply due to ignorance. The template also had some low contrast text flagged in
+                  the header, again a simple fix that I didn’t notice. The one that was my fault was alt text. I had remembered to add alt text to my images but managed to
+                   miss 2 on W3. I was also flagged for repeating myself with links but as I said last week I didn’t feel that this was a problem.
+            </p>
+
+            <p>When I did a few tests with Google Lighthouse I saw some more issues with images and the template. Most notably, when simulating mobile speeds, the header
+                 images on the site were grossly oversized. Those images alone were almost 900 KB, I wouldn’t want my pages to be over a MB yet here this image alone was
+                  almost there! Lighthouse also flagged the low contrast and alt text just like WAVE did reinforcing their importance.
+            </p>
+
+            <h2 class="section-heading">Easy Fixes</h2>
+
+            <a href="#">
+            <img class="img-fluid" src="img/post-sample-image.jpg" alt="">
             </a>
+            <span class="caption text-muted">To go places and do things that have never been done before – that’s what
+            living is all about.</span>
 
-            <br>
-
-            <h2 class="section-heading">What Does Accessibility cover?</h2>
-
-            <p>Defining accessibility is a bit more nuanced then you might think. First of all there are blind users who use screen readers
-               and text to speech devices to help navigate the web. Compensating for the blind usually means clearly labeling alternate
-                text for images along with presenting valid audio options such as text to speech. Some users have physical limitations
-                 that prevent them from using a standard mouse and keyboard. Making sure that the site is navigable with only mouse or only
-                  keyboard can be a huge boon for the physically disabled. There are many more aspects to consider such as contrast that can
-                   greatly improve web access.
-            </p>
-
-            <p>To test Stevens Pass I’m going to utilize a few tools designed to simulate how a disabled user would see the site. First I’m
-                 going to run it through WAVE which scans elements to see if they meet section 508 compliance (the US law for accessibility).
-                  I also will use acchecker which is the canadian version of WAVE. Google lighthouse is a built in tool for google chrome that
-                   generates a report of the website under simulated conditions such as bad cell data. Between all of these tools I was able to
-                    get a solid read on Stevens Pass’ website.
-            </p>
-
-            <a href="https://www.stevenspass.com/site">
-                <img class="img-fluid" src="img/StevensPassWAVE.JPG" alt="The Stevens Pass Home Page viewed in WAVE">
-            </a>
-
-            <br>
-
-            <h2 class="section-heading">Testing 1,2,3...</h2>
-
-            <p>Stevens Pass may be a ski resort but that certainly doesn't stop the disabled from enjoying the slopes. I was pleasantly surprised
-                 to see that WAVE had very few issues with the site. The primary problems it had were with elements that were entirely visual, in
-                  this case the language selections in the footer. This could be easily solved with a little bit of alt text. The other issue was
-                   redundancy and noscript elements but both were non intrusive so I didn’t really think it was a problem. AcChecker provided
-                    almost identical results which made a good impression on me.
-            </p>
-
-            <p>Google Lighthouse presented a new set of issues this time mostly around performance. While having a fast website is not necessarily
-                 an accessibility issue it does vastly improve the usability of those on limited networks. With some painfully slow load times of
-                  around 9 seconds on simulated 4g using Stevens Pass’ website is not cutting it. The primary contributor to this is the excessive
-                   amount of photos on the home page. The Cache and DOM were also unreasonably large slowing things down even more. This is
-                    unreasonable for their target audience who would likely be in low cell service areas. The cumbersome experience presented
-                     here would be severely detrimental to more than just disabled users and desperately needs improvement.
-            </p>
-            
-            <a href="https://www.stevenspass.com/site">
-                <img class="img-fluid" src="img/StevensPassLightHouse.JPG" alt="The Stevens Pass Home Page viewed in WAVE">
-            </a>
-
-            <span class="caption text-muted">A look at Google lighthouse performing a test on Stevens Pass home page</span>
-
-            <p>My main takeaway from this test is that meeting accessibility standards isn’t actually that hard but stylistic choices can get in
-                 the way. While Stevens Pass does have some issues most of them are minor. Nothing was explicitly broken or in the way of what a
-                  disabled user would need. The proper use of aria tags and alt tags throughout the site was commendable. The biggest change I
-                   would recommend would be to improve performance as that heavily impacted all users. Implementing these changes should be
-                    straightforward and easy to fix.
-            </p>
+            <p>hey</p>
 
 
         </div>
