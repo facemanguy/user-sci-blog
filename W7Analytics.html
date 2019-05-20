@@ -14,7 +14,7 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Week 6 Accessibility Self Test">
+  <meta name="description" content="">
   <meta name="author" content="John Meyer">
 
   <title>User Science Journal</title>
@@ -51,7 +51,7 @@
               Blog
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                <a class="dropdown-item" href="W1Edmonds.html">Week 1: Edmond Theater</a>
+              <a class="dropdown-item" href="W1Edmonds.html">Week 1: Edmond Theater</a>
                 <a class="dropdown-item" href="W2Boats.html">Week 2: Boat Tours</a>
                 <a class="dropdown-item" href="W3SkateBoards.html">Week 3: Testing Skateboards</a>
                 <a class="dropdown-item" href="W4Mobile.html">Week 4: Mobile & New Skateboards</a>
@@ -76,11 +76,11 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="post-heading">
-            <h1>Testing Myself</h1>
-            <h2 class="subheading">Checking My Own Accessibility</h2>
+            <h1>All About Analytics</h1>
+            <h2 class="subheading">A Quick Look at Big Data</h2>
             <span class="meta">Posted by
               <a href="#">John Meyer</a>
-              on May 12, 2019</span>
+              on May 19, 2019</span>
           </div>
         </div>
       </div>
@@ -92,53 +92,82 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
+          
+        <h2 class="section-heading">Big Brother Analytics</h2>
 
-            <h2 class="section-heading">Checking My own Work</h2>
+        <p>Today we have a wealth of information online, some that we want as well as some we provide. Whenever we create a new online account, visit
+          a website, click an ad, or buy something online we are tracked. Not that we are being stalked or intruded upon but rather studied as a data
+          point on a graph. The vast majority of businesses online will use some sort of analytics tracking to learn more about their customers as
+          otherwise it’s hard for them to tell how well they are doing. This is legally never about us as individuals but rather about the entirety
+          of people visiting a website and what categories they fall into. In fact I have been tracking data on this very site with Google
+          analytics, the most commonly used data tool online.
+        </p>
 
-            <p>Last week was all about accessibility implementation which isn’t all that hard yet regularly ignored. I am not infallible however and may have skimmed over
-               some accessibility standards on the very site you are looking at. Simple forgetfulness may be one of the most common reasons why a website isn’t up to date
-                with accessibility. Thus I will spend this week analyzing my own work here to see what I can fix.
-            </p>
+        <img class="img-fluid" src="img/Ga-home.JPG" alt="My Google analytics homepage">
 
-            <p>To quickly remind ourselves what we will be testing with I’ll summarize last weeks guidelines. The United States has a law called Section 508 which requires
-                 websites to include accessibility features for disabled users. Most other countries have a similar law in place making it a good idea to create compliant
-                  work from a legal perspective. To test this I will be running my site through WAVE and Google Lighthouse, 2 tools that can identify problems automatically.
-                   I want to make sure that I can resolve any issues that are critical for disabled users.
-            </p>
+        <p>I want to share with you exactly what this Big Data world is about by being transparent with the process. Google analytics gathers a lot
+           about what type of users visit which pages and in what manner. These are measured in a number of marketing and data terms like pageviews,
+            conversions, goals, bounce rate, and more. I’m going to make a few guesses about what the data looks like so we can compare it with the
+             reality. <br><br>Let’s say that:
+        </p>
 
-            <a href="#">
-                <img class="img-fluid" src="img/IconErrors.JPG" alt="The errors on my icons">
-            </a>
+        <ul>
+          <li>Most of my visitors are between 25 and 45 with a strong male majority</li>
+          <br>
+          <li>Almost all visitors are reaching my site through github</li>
+          <br>
+          <li>I will have an article with a high number of pageviews from a direct link, likely from being featured in class</li>
+          <br>
+          <li>Most users will not explore beyond the page they were linked to (high bounce rate)</li>
+          <br>
+          <li>Almost all of my visitors will be on a desktop with Google Chrome</li>
+        </ul>
 
-            <h2 class="section-heading">Issues with Images</h2>
+        <p>Lets pour over the data and see if I was right! While we do so I’d like to explain a bit about what each metric is in an
+           attempt to demystify the big data.
+        </p>
 
-            <p>Running WAVE revealed that I had a problem with image links on almost every page. The template I was using had social media icons that defaulted as empty.
-                 This should be an easy fix but it was one that I was totally unaware of simply due to ignorance. The template also had some low contrast text flagged in
-                  the header, again a simple fix that I didn’t notice. The one that was my fault was alt text. I had remembered to add alt text to my images but managed to
-                   miss 2 on W3. I was also flagged for repeating myself with links but as I said last week I didn’t feel that this was a problem.
-            </p>
+        <h2 class="section-heading">What Does the Chart Say?</h2>
 
-            <a href="#">
-                <img class="img-fluid" src="img/GifErrors.JPG" alt="The errors on my images">
-            </a>
+        <p>I was right about how my visitors reached the site though. With 53 out of 54 users navigating to my site via desktop I can confidently say
+           that I’m the only person who has used the site on mobile. The most popular browser was indeed chrome but I was a bit surprised to see that
+            about a third used safari.
+        </p>
 
-            <p>When I did a few tests with Google Lighthouse I saw some more issues with images and the template. Most notably, when simulating mobile speeds, the header
-                 images on the site were grossly oversized. Those images alone were almost 900 KB, I wouldn’t want my pages to be over a MB yet here this image alone was
-                  almost there! Lighthouse also flagged the low contrast and alt text just like WAVE did reinforcing their importance.
-            </p>
+        <a href="#">
+            <img class="img-fluid" src="img/Ga-device-graph.JPG" alt="The list of kinds of devices that visited my site">
+        </a>
+        
+        <p>This may surprise you but Google Analytics defaults to not enabling any demographics data collection. This means that it knows people are
+           visiting the site but not who they are. Unfortunately I did not enable demographics data in time to gather any meaningful data. As to what
+            predefined marketing category my visitors fall into will have to remain a mystery for now.
+        </p>
+        
+        <p>I did have a very popular page, Week 2’s article about boats had a total of 49 pageviews! That is actually more views than the home page! A
+           Pageview is simply the number of times a page is viewed including repeats. However, even though the number of unique visitors was the highest
+            it was well within normal limits. I probably inflated the numbers while working on it which would explain my other abnormally high counts.
+             70% of my visitors were direct links which just about confirms that I’m my own biggest fan!
+        </p>
 
-            <a href="#">
-                <img class="img-fluid" src="img/SlowImg.JPG" alt="Lighthouse showing statistics">
-            </a>
+        <p>Github was my biggest referral site quickly followed by seattle universities canvas page. The majority of connections were direct though
+           so it was a very limited sample.
+        </p>
 
+        <a href="#">
+            <img class="img-fluid" src="img/Ga-traffic.JPG" alt="Google Analytics traffic graph">
+        </a>
 
-            <h2 class="section-heading">Easy Fixes</h2>            
+        <p>The bounce rate is how often a user only visits one page and leaves immediately. This usually means that the visitor didn’t find what they
+           were looking for and is generally a bad thing. My site had an abnormally low one of 33%! That combined with an average session time of 10
+            minutes means that most people are reading my work.
+        </p>
 
-            <p>My first fix was for the social media icons, simply adding a piece of text for each icon looked good and solved my error. I also cleaned up the missing alt text
-                 on one of the pages. This left me with my contrast and oversized images. I switched the images out for far more compressed ones that I liked better which
-                  increased my load times.The contrast issue seemed to be a miscalculation as the background is the same hue but the image is creating enough contrast to make
-                   it a non issue. This analysis helped me spot many things wrong with my own work that I can now try to fix ahead of time.
-            </p>
+        <p>This was of course a quick look at a small sample size but we did cover most of what Google Analytics can do. I had some good guesses and some
+           bad ones which is important. Hard data tends to shed light on any biases we may have in our own work. I think that every online business should
+            try their best to gather data on their users now that I have experienced it. It also is surprisingly non intrusive for the individual as I never
+             knew exactly who was who in my results. If you want to try it yourself go ahead and create an account, set up a site to track, and add in the
+              small script tag to your pages to start gathering data.
+        </p>
 
 
         </div>
