@@ -169,6 +169,11 @@
               small script tag to your pages to start gathering data.
         </p>
 
+        <br>
+        <p>Give a Thumbs up if you liked the article!</p>
+        <div id="thankYou7"></div>
+        <img id="thumbVote7" class="img-fluid" src="img/thumbsUp.png" onclick="gtag('event', 'upvote7', {'event_category': 'vote','event_label': 'week7',});" alt="Thumbs up review button">
+
 
         </div>
       </div>
@@ -224,6 +229,10 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/clean-blog.min.js"></script>
+  <script>
+    document.getElementById("thumbVote7").addEventListener("click", function(){
+    document.getElementById("thankYou7").innerHTML = 'Thanks For Voting! <img src="img/green-check-mark-transparent.png">';
+  });</script>
 
 </body>
 

@@ -140,6 +140,11 @@
                    it a non issue. This analysis helped me spot many things wrong with my own work that I can now try to fix ahead of time.
             </p>
 
+            <br>
+            <p>Give a Thumbs up if you liked the article!</p>
+            <div id="thankYou6"></div>
+            <img id="thumbVote6" class="img-fluid" src="img/thumbsUp.png" onclick="gtag('event', 'upvote6', {'event_category': 'vote','event_label': 'week6',});" alt="Thumbs up review button">
+
 
         </div>
       </div>
@@ -195,6 +200,10 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/clean-blog.min.js"></script>
+  <script>
+    document.getElementById("thumbVote6").addEventListener("click", function(){
+    document.getElementById("thankYou6").innerHTML = 'Thanks For Voting! <img src="img/green-check-mark-transparent.png">';
+  });</script>
 
 </body>
 

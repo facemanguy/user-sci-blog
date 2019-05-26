@@ -157,6 +157,10 @@
 
             <p>The color scheme for the text is great and has solid contrast. The shift in background color helps make the white text pop as you navigate. The content is short and to the point. I would make the text size a bit bigger though as i find it rather small. The background image is also mildly distracting when I’m reading.</p>
 
+            <br>
+            <p>Give a Thumbs up if you liked the article!</p>
+            <div id="thankYou1"></div>
+            <img id="thumbVote1" class="img-fluid" src="img/thumbsUp.png" onclick="gtag('event', 'upvote1', {'event_category': 'vote','event_label': 'week1',});" alt="Thumbs up review button">
         </div>
       </div>
     </div>
@@ -211,6 +215,10 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/clean-blog.min.js"></script>
+  <script>
+    document.getElementById("thumbVote1").addEventListener("click", function(){
+    document.getElementById("thankYou1").innerHTML = 'Thanks For Voting! <img src="img/green-check-mark-transparent.png">';
+  });</script>
 
 </body>
 
