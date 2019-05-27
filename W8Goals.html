@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138229338-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-138229338-1');
+  </script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="John Meyer">
+
+  <title>User Science Journal</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css " rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+    rel='stylesheet' type='text/css'>
+  <link href="css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">John Meyer</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Blog
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+              <a class="dropdown-item" href="post1.html">Post 1</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('img/art-artistic-background.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Blogging About Design</h1>
+            <h2 class="subheading">Excited to share my thoughts and findings
+            </h2>
+            <span class="meta">Posted by
+              <a href="#">John Meyer</a>
+              on May 26, 2019</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+
+            <h2 class="section-heading">Tracking Goals and Events</h2>
+
+            <p>As I continue to look at how developers can use analytics to understand their users I may ask myself, how does this help my company?
+                The massive influx of data we receive on our user base can be good feedback but may be hard to see changes. This is where the Goals
+                feature of Google Analytics comes in. We can set a company goal to track when certain events happen on our website. The data gathered
+                can be tracked as conversions letting us know if what we want to happen is.
+            </p>
+
+            <a href="#">
+                <img class="img-fluid" src="img/conversions.JPG" alt="">
+            </a>
+
+            <p>To test this I set up a simple task that a company might run on my site, a review. It took me a while to implement it correctly
+                but on every article there is now a thumbs up button. When a user clicks on it a simple message pops up saying thanks and a event
+                is triggered in Google Analytics. My favorite article is week 2 and I wanted more people to think so too. My goal was then to track
+                how many people ‘liked’ week 2 in comparison to the others. To encourage this I announced my intentions at work as well as making a social media post.
+            </p>
+
+            <h2 class="section-heading">Blitzkrieg Marketing</h2>
+
+            <a href="#">
+                <img class="img-fluid" src="img/goal-events.JPG" alt="">
+            </a>
+
+            <p>The results were what I expected for the most part. Initially I made a test goal which revealed some enlightening yet ultimately moot
+                data. GA can track where a user came from but not past that meaning that visits from a VPN count as that country. I also forgot to
+                give feedback on the button initially leading to people clicking it multiple times which triggered multiple events. The user that
+                discovered this managed to generate over 200 pings worldwide when testing GA!
+            </p>
+
+            <a href="#">
+                <img class="img-fluid" src="img/pageVotes.JPG" alt="">
+            </a>
+            <span class="caption text-muted">The events that triggered on a button push numbered by week</span>
+
+            <p>The actually trackable data did make it clear that my lightning marketing campaign worked. I had 43 events in total with 27 of
+                them being unique. Out of those week 2 was the most popular but it was also quickly followed by week 3 to my suprise. This meant that
+                I got most people to agree with me but If I had a larger data set another article might have been the most popular. In a real world
+                scenario it might be better to set a weaker article as my goal to balance out the user base cutting down on my bounce rate.
+            </p>
+
+            <br>
+            <p>Give a Thumbs up if you liked the article!</p>
+            <div id="thankYou8"></div>
+            <img id="thumbVote8" class="img-fluid" src="img/thumbsUp.png" onclick="gtag('event', 'upvote8', {'event_category': 'vote','event_label': 'week8',});" alt="Thumbs up review button">
+
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>Twitter
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                </span>Facebook
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                </span>Github
+              </a>
+            </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy; John Meyer 2018</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+  <script>
+        document.getElementById("thumbVote8").addEventListener("click", function(){
+        document.getElementById("thankYou8").innerHTML = 'Thanks For Voting! <img src="img/green-check-mark-transparent.png">';
+    });</script>
+
+</body>
+
+</html>
