@@ -51,7 +51,7 @@
               Blog
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                <a class="dropdown-item" href="W1Edmonds.html">Week 1: Edmonds Theater</a>
+                <a class="dropdown-item" href="W1Edmonds.html">Week 1: Edmond Theater</a>
                 <a class="dropdown-item" href="W2Boats.html">Week 2: Boat Tours</a>
                 <a class="dropdown-item" href="W3SkateBoards.html">Week 3: Testing Skateboards</a>
                 <a class="dropdown-item" href="W4Mobile.html">Week 4: Mobile & New Skateboards</a>
@@ -78,11 +78,11 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="post-heading">
-            <h1>A look at Mobile Testing</h1>
-            <h2 class="subheading">The other kind of usability</h2>
+            <h1>Testing Alternates in Real Time</h1>
+            <h2 class="subheading">Using Google Analytics to test options live</h2>
             <span class="meta">Posted by
               <a href="#">John Meyer</a>
-              on April 28, 2019</span>
+              on June 2, 2019</span>
           </div>
         </div>
       </div>
@@ -94,67 +94,45 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-        
-        <h2 class="section-heading">SummerBoard</h2>
-        <p>
-            Last week we took a look at the basics of usability testing websites. The test subject, Leiftech, had a few issues primarily with
-            showcasing the right information in the right area. However, in the week since we analyzed their site they have released a new
-            product and rebranded themselves. The website stayed mostly the same but it changed enough to warrant a second look. Now known
-            as SummerBoard I want to see if the same issues I came across originally are present in the mobile version.
-        </p>
 
-        <p>
-            The importance of mobile design has skyrocketed in the last decade as the amount of browsing on phones did the same. While many
-            sites tackle this challenge in different ways the most common is to allow for a responsive layout. While no mobile specific features
-            need to be created some desktop standards will not work. You can’t use hover with fingers and certainly don’t want to load a new page
-            just to see more content. Summerboard avoids these major problems off the bat which is good for any modern website.
-        </p>
+            <h2 class="section-heading">A/B Testing: Using Alternates</h2>
 
-        <a href="https://summerboard.com/">
-            <img class="img-fluid" src="img/Screenshot_20190428-224427.png" alt="The Homepage od Summerboard on mobile">
-        </a>
+            <p>As a further test of last week’s goal testing, this week we will take a look at how users get to my goal. To quickly recap, we can use Google Analytics
+                 to track user events such as clicking a button, we can then track those events to see how many people accomplished a goal. My goal is to have people 
+                 read and like week 2 as it is my favorite.
+            </p>
 
-        <h2 class="section-heading">The Test</h2>        
-        <p>This is a usability test though so I want to know if SummerBoard runs into the same issues on my phone. I set up some recording
-            software, recruited some volunteers, and adjusted my script from last time. To summarize my process: I explained what a usability test
-            consisted of briefly along with some details on what I needed from them, primarily narration. After that I had my users scroll through
-            the homepage giving me their personal impressions. Then I ran my three tasks:
-        </p>
+            <a href="#">
+                <img class="img-fluid" src="img/userPath.JPG" alt="The path users took">
+            </a>
 
-        <ol>
-            <li>What is this site about? Do you understand what is being sold & how would you find out more?</li>
-            <li>Assume you were buying one of these. How would you go about that? Can you finance and find price information easily?</li>
-            <li>If you already had one but needed a battery replaced where can you buy one of those? Is it under warranty?</li>
-        </ol>
+            <p>In the past I had asked people to visit the page directly as I wanted to see if I could get them to vote on the article. This time I used the variant
+                 testing option in GA to see if an altered home page could lead people to it naturally. I set up the original page and one with a promotional banner
+                  into the system and let people know to check it out. Unfortunately I did not gather as many views as last week severely limiting my data pool.
+            </p>
 
-        <p>Then I took any questions, thoughts, or suggested changes before I let my test subjects on their way.</p>
-      
-        <a href="https://summerboard.com/">
-            <img class="img-fluid" src="img/Screenshot (Apr 28, 2019 10_44_51 PM).png" alt="The Homepage od Summerboard on mobile">
-        </a>
+            <a href="#">
+                <img class="img-fluid" src="img/alt-test-views.JPG" alt="The views of this test page">
+            </a>
 
-        <h2 class="section-heading">What was Different on Mobile</h2>
+            <h2 class="section-heading">Was the Variant Better?</h2>
 
-        <p>My results were a bit surprising as many of the issues I had with the desktop version disappeared. All of my testers found that the
-            new infographic was very informative and easy to understand. The buying process was very easy for all of them. The finances were 
-            a bit odd as the amount changed on them but that was an external site. One user wanted more information about specifications on
-            the main page while another found a whole manual pdf. The recurring problem was that the menu on the bottom of the page didn’t
-            actually provide what my users wanted. Compared to the desktop users navigation was a bit easier and quicker but lacked the
-            density they wanted.
-        </p>
+            <p>The results were good though as I did see an increase in traffic to the week 2 article. My page views on week 2 were significantly higher than the
+                 others. I did not promote that article with anything other than the banner on the home page. I can see just how strong of an effect these banners
+                  can have when promoting my own content.
+            </p>
 
+            <a href="#">
+                <img class="img-fluid" src="img/altConversions.JPG" alt="Conversions for this test">
+            </a>
 
-        <p>Given that this felt very similar to the desktop site and almost every element transferred to a mobile format easily there aren’t too many
-            major critiques. The big recommendations from my users were mostly about condensing content into solid menus. Adding more content into
-            the dropdown menu was the biggest request by far which makes sense as you lack a navbar on mobile. The other issues were about more technical
-            things such as making a whole piece a link rather than the title. Overall I’m rather impressed by how well this test went in comparison to
-            the other one.
-        </p>
+            <p>The problem with this natural pathing is that it only guides people to the page leaving them without a mission. As even though I had well over
+                 40 views of my page I only got 3 conversions. Having a more direct call to action would have likely helped dramatically.
+            </p>
 
-        <br>
-        <p>Give a Thumbs up if you liked the article!</p>
-        <div id="thankYou4"></div>
-        <img id="thumbVote4" class="img-fluid" src="img/thumbsUp.png" onclick="gtag('event', 'upvote4', {'event_category': 'vote','event_label': 'week4',});" alt="Thumbs up review button">
+            <p>I still think that I got more visitors with my banner linked page than on my original. Further testing is definitely required as the sample
+                 size for this test was far to low. I generally had good reactions and am excited to test more things with this alternate system in the future.
+            </p>
 
 
         </div>
@@ -211,10 +189,6 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/clean-blog.min.js"></script>
-  <script>
-    document.getElementById("thumbVote4").addEventListener("click", function(){
-    document.getElementById("thankYou4").innerHTML = 'Thanks For Voting! <img src="img/green-check-mark-transparent.png">';
-  });</script>
 
 </body>
 
